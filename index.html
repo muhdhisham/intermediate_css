@@ -3,33 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Units:Viewport Units</title>
+    <title>Units:Relative Units</title>
     <style media="screen">
-        header,section,article
-        {
-            border-radius: 4px;
-            margin: 8px 0;
+        body{
+            font-family: sans-serif;
+            margin: 120px;
         }
-        header{
-            background-color: blueviolet;
-            height: 16vh;  /* vh => viewheight 1vh= 1% of total screen height */
-            /* width: 50vw;   vw veiw width */
+
+        h1,h2,h3{
+            margin: 0;
+            text-align: center;
         }
         section
         {
-            background-color: chartreuse;
-            height: 40vh;
+            font-size: 64px;
         }
-        article
-        {
-            background-color: chocolate;
-            height: 50vh;
+        h1{
+            /* this is relative sizing */
+            /* when this is set to 2em the font size of section automatically changes to 128px */
+            /* thus all the heading tags are set according to em value unless defined seperately */
+            font-size: 1em;  
         }
     </style>
 </head>
 <body>
-    <header></header>
-    <section></section>
-    <article></article>
+    <section>
+        <h1>Main Header</h1>
+        <h2>Sub Header</h2>
+        <button type="button" name="button">Click Here</button>
+    </section>
+    <h3>Outside Section Tag</h3>
 </body>
 </html>
