@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Units:Relative Units</title>
     <style media="screen">
-        body{
-            font-family: sans-serif;
-            margin: 120px;
+        button {
+            display: block;
+            width: max-content;
+            margin: 150px auto;
+            background-color: orange;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 2rem;
+            padding: 0.6rem 2rem;
+                /* all specifies for all changes second value specifies the length of the transition*/
+                /* we can also specify delay as 3rd parameter */
+            transition: all .8s;
+                /* the are several transition time in funstions */
+            transition-timing-function: step-start;
         }
-            /* rem is root em rhat is it is based onn font size given to the html tag */
-        h1,h2,h3{
-            margin: 0;
-            text-align: center;
-        }
-        section
-        {
-            font-size: 64px;
-        }
-        h1{
-            /* this is relative sizing */
-            /* when this is set to 2em the font size of section automatically changes to 128px */
-            /* thus all the heading tags are set according to em value unless defined seperately */
-            font-size: 1em;  
+
+        button:hover {
+            background-color: orange;
+            font-size: 54px;
         }
     </style>
 </head>
+
 <body>
-    <section>
-        <h1>Main Header</h1>
-        <h2>Sub Header</h2>
-        <button type="button" name="button">Click Here</button>
-    </section>
-    <h3>Outside Section Tag</h3>
+    <button type="button">Click Here</button>
 </body>
+
 </html>
